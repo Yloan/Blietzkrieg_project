@@ -8,9 +8,9 @@
         <link rel="stylesheet" href="styles.css" />
         <script>
             function ExportReport() {
-                const link = document.createElement('a');
-                link.href = 'assets/BLITZKRIEG.pdf';
-                link.download = 'BLITZKRIEG_Thesis_Report.pdf';
+                const link = document.createElement("a");
+                link.href = "assets/BLITZKRIEG_2_second_defense.pdf";
+                link.download = "BLITZKRIEG_Thesis_Report_2.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -28,29 +28,35 @@
                     <a href="#gameplay">Gameplay</a>
                     <a href="#demonstrations">Demonstrations</a>
                     <a href="#external_ressources">External Ressources</a>
-                    <button id="Export_button" onclick="ExportReport()">Export Thesis Report</button>
+                    <button id="Export_button" onclick="ExportReport()">
+                        Export Thesis Report
+                    </button>
                 </div>
             </nav>
         </header>
-        <img src="assets/Logo_bk.png" alt="Logo">
+        <img src="assets/Logo_bk.png" alt="Logo" />
         <!--First section , in this section we will introduce the project and its objectives-->
         <section id="game-description">
             <h1>Game description</h1>
             <p class="subtitles">General presentation of the project</p>
             <section class="subsection">
                 <p class="paragraph">
-                    Blitzkrieg is a fast paced multiplayer team based fighting game where you can play as a large cast of robots with various unique designs, play styles, and synergies. <br>
- 
-                    In the game, up to four people can play against each other using a vast array of characters. <br>
-                    
-                    Before a game begins, each player chooses three of the 18 playable robots before duking it out on one of the 6 available maps. <br>
-                    The last one standing is declared the winner. <br>
-                    
-                    The game put a great emphasis on team-building, strategy, and fast thinking. <br>
+                    Blitzkrieg is a fast paced multiplayer team based fighting
+                    game where you can play as a large cast of robots with
+                    various unique designs, play styles, and synergies. <br />
 
+                    In the game, up to four people can play against each other
+                    using a vast array of characters. <br />
+
+                    Before a game begins, each player chooses three of the 18
+                    playable robots before duking it out on one of the 6
+                    available maps. <br />
+                    The last one standing is declared the winner. <br />
+
+                    The game put a great emphasis on team-building, strategy,
+                    and fast thinking. <br />
                 </p>
             </section>
-            
         </section>
 
         <!-- Status & synergy, Team building !  -->
@@ -59,136 +65,225 @@
             <p class="subtitles">The pillars of gameplay</p>
             <h3 id="SS">Status & synergy</h3>
             <section class="subsection">
-                <img src="assets/Status.png" alt="Status" width="100%">
+                <img src="assets/Status.png" alt="Status" width="100%" />
                 <p class="paragraph">
-                    Statuses are temporary effects applied to characters (burn, oil, freeze, etc.) that change their behavior or abilities. 
-                    The originality of the game lies in the synergy between these statuses: 
-                    some combined effects trigger special reactions, 
-                    such as an explosion if a burning enemy is also covered in oil. 
-                    Players must exploit these interactions to gain the upper hand and control the battlefield.
+                    Statuses are temporary effects applied to characters (burn,
+                    oil, freeze, etc.) that change their behavior or abilities.
+                    The originality of the game lies in the synergy between
+                    these statuses: some combined effects trigger special
+                    reactions, such as an explosion if a burning enemy is also
+                    covered in oil. Players must exploit these interactions to
+                    gain the upper hand and control the battlefield.
                 </p>
             </section>
             <h3>Team building</h3>
             <section class="subsection">
                 <p class="paragraph">
-                    Before each match, every player builds their team by choosing three characters from a diverse selection. Each character has their own stats, resistances, and abilities. 
-                    Team composition is crucial: you must balance offense, defense, and status synergies to maximize your chances of victory.
-                    <br><br>
-                    The team building phase is one of the most strategic aspects of Blitzkrieg. Players must consider not only the individual strength of each character but also how they synergize with one another. 
-                    Some characters work better together due to shared status effects or complementary abilities. For instance, pairing a character that applies fire damage with one that triggers explosions on flammable enemies creates powerful combos. 
-                    Additionally, players must anticipate their opponents' strategies and build defensive or offensive teams accordingly. 
-                    The depth of team building ensures that every match feels unique, and multiple viable team compositions exist, allowing different playstyles and strategies to flourish.
+                    Before each match, every player builds their team by
+                    choosing three characters from a diverse selection. Each
+                    character has their own stats, resistances, and abilities.
+                    Team composition is crucial: you must balance offense,
+                    defense, and status synergies to maximize your chances of
+                    victory.
+                    <br /><br />
+                    The team building phase is one of the most strategic aspects
+                    of Blitzkrieg. Players must consider not only the individual
+                    strength of each character but also how they synergize with
+                    one another. Some characters work better together due to
+                    shared status effects or complementary abilities. For
+                    instance, pairing a character that applies fire damage with
+                    one that triggers explosions on flammable enemies creates
+                    powerful combos. Additionally, players must anticipate their
+                    opponents' strategies and build defensive or offensive teams
+                    accordingly. The depth of team building ensures that every
+                    match feels unique, and multiple viable team compositions
+                    exist, allowing different playstyles and strategies to
+                    flourish.
                 </p>
-
             </section>
             <h3>Characters</h3>
             <section class="subsection">
                 <p class="paragraph">
-                    <img src="assets/Characters.png" alt="Characters" width="100%">
-                    The game offers 18 playable characters, each with unique styles, abilities, and strategies. 
-                    Some are specialized in direct attacks, others in support or area control. 
-                    This diversity allows every player to find a style that suits them and to experiment with different combinations.
+                    <img
+                        src="assets/Characters.png"
+                        alt="Characters"
+                        width="100%"
+                    />
+                    The game offers 18 playable characters, each with unique
+                    styles, abilities, and strategies. Some are specialized in
+                    direct attacks, others in support or area control. This
+                    diversity allows every player to find a style that suits
+                    them and to experiment with different combinations.
                 </p>
             </section>
         </section>
-
 
         <!-- Gameplay mechanics , features , fun factor -->
         <section id="gameplay">
             <h1>Gameplay & Interface</h1>
             <p class="subtitles">How the Gameplay works</p>
-            
-            <p class="paragraph" style="color: var(--light);">
-                During a match, every player has one character on the field at a time (the 1st one selected at the start of the match) while the two others act as backup, swapping with the current character either when the 1st one dies or when the player uses a specific command. <br>
- 
-                On the field, the character can move in every direction and attack left or right using one of their 3 character specific skills. <br>
-                Each character possesses different stats, different for each character. <br>
-                The stats are the health, speed, cooldowns, and resistances of the current character. <br>
-                
-                As backup, a character can use one of their moves, even if they are not on the field, allowing for combos and synergies between characters. <br>
-                If a character is dead, it can't use its support skill, even if the character isn't fielded. <br>
-                
-                There are four types of attacks (slash, pierce, blunt and ''none'') and the resistances of a character affects the damage received by the first three (from taking 50% damage to 150%). <br>
-                
-                Statuses, inflicted by almost every attack in the game, have their own effect (ex: burning an enemy) but also have synergies when some other statuses are present on the same target (ex: an enemy covered in oil explodes when also burned). <br>
 
-            </p> <br><br>
+            <p class="paragraph" style="color: var(--light)">
+                During a match, every player has one character on the field at a
+                time (the 1st one selected at the start of the match) while the
+                two others act as backup, swapping with the current character
+                either when the 1st one dies or when the player uses a specific
+                command. <br />
+
+                On the field, the character can move in every direction and
+                attack left or right using one of their 3 character specific
+                skills. <br />
+                Each character possesses different stats, different for each
+                character. <br />
+                The stats are the health, speed, cooldowns, and resistances of
+                the current character. <br />
+
+                As backup, a character can use one of their moves, even if they
+                are not on the field, allowing for combos and synergies between
+                characters. <br />
+                If a character is dead, it can't use its support skill, even if
+                the character isn't fielded. <br />
+
+                There are four types of attacks (slash, pierce, blunt and
+                ''none'') and the resistances of a character affects the damage
+                received by the first three (from taking 50% damage to 150%).
+                <br />
+
+                Statuses, inflicted by almost every attack in the game, have
+                their own effect (ex: burning an enemy) but also have synergies
+                when some other statuses are present on the same target (ex: an
+                enemy covered in oil explodes when also burned). <br />
+            </p>
+            <br /><br />
             <h3>Interface</h3>
-                <section class="subsection">
-                    <img src="assets/Menu_interface.png" alt="Interface" width="100%">
-                    <p class="paragraph">
-                        At the end the interface of the menu should look like this. <br>
-                        The interface is designed to be intuitive and user-friendly, 
-                        allowing players to easily navigate 
-                        through menus, select characters, and set up matches. <br>
-                        For now, this is just the design concept, for the first page of the menu, even not yet implemented in the game.
-                    </p>
-                </section>
+            <section class="subsection">
+                <img
+                    src="assets/Menu_interface.png"
+                    alt="Interface"
+                    width="100%"
+                />
+                <p class="paragraph">
+                    At the end the interface of the menu should look like this.
+                    <br />
+                    The interface is designed to be intuitive and user-friendly,
+                    allowing players to easily navigate through menus, select
+                    characters, and set up matches. <br />
+                    For now, this is just the design concept, for the first page
+                    of the menu, even not yet implemented in the game.
+                </p>
+            </section>
             <h3>Controls</h3>
-                <section class="subsection">
-                    <p class="paragraph">
-                        Actually in the gameplay phase, you have already choosen 3 characters for your team.
-                        Two of them are on a side line as backups, while one is active on the battlefield. 
-                        You can switch between your characters at any time to adapt to the situation. 
-                        Each character has four unique abilities, each with its own cooldown period. 
-                        You must use these abilities strategically, considering their effects, cooldowns, and potential synergies with statuses for win.
-                    </p> <br>
-                    <h3 style="margin-top: 1.5rem; margin-bottom: 1rem;">Controls</h3>
-                    <img src="assets/controls.png" alt="controls" width="100%">
-                    <ul class="controls-list">
-                        <li><strong>A / S / D keys:</strong> Activate the 3 abilities of the character on the battlefield</li>
-                        <li><strong>Q & W keys:</strong> Activate abilities of the characters on the side line</li>
-                        <li><strong>E + Q key:</strong> For switch between support number 1 and backup characters</li>
-                        <li><strong>E + W key:</strong> For switch between support number 2 and backup characters</li>
-                        <li><strong>Arrows key:</strong> Move the character on the battlefield</li>
-
-                    </ul>
-                    <p class="paragraph">
-                        When launching the game, the player accesses an intuitive menu to set up the match (the menu without any clean desgin for the moment): 
-                        choose the mode (local or online), number of players and AIs, select characters and the map. 
-                        In-game, each player controls one active character but can switch at any time with one of their two backups. 
-                        Battles are paced by the use of abilities with cooldowns, the application of statuses, and strategic team management. 
-                        The last player with at least one character alive wins the match.
-                    </p>
-                </section>
-            
+            <section class="subsection">
+                <p class="paragraph">
+                    Actually in the gameplay phase, you have already choosen 3
+                    characters for your team. Two of them are on a side line as
+                    backups, while one is active on the battlefield. You can
+                    switch between your characters at any time to adapt to the
+                    situation. Each character has four unique abilities, each
+                    with its own cooldown period. You must use these abilities
+                    strategically, considering their effects, cooldowns, and
+                    potential synergies with statuses for win.
+                </p>
+                <br />
+                <h3 style="margin-top: 1.5rem; margin-bottom: 1rem">
+                    Controls
+                </h3>
+                <img src="assets/controls.png" alt="controls" width="100%" />
+                <ul class="controls-list">
+                    <li>
+                        <strong>A / S / D keys:</strong> Activate the 3
+                        abilities of the character on the battlefield
+                    </li>
+                    <li>
+                        <strong>Q & W keys:</strong> Activate abilities of the
+                        characters on the side line
+                    </li>
+                    <li>
+                        <strong>E + Q key:</strong> For switch between support
+                        number 1 and backup characters
+                    </li>
+                    <li>
+                        <strong>E + W key:</strong> For switch between support
+                        number 2 and backup characters
+                    </li>
+                    <li>
+                        <strong>Arrows key:</strong> Move the character on the
+                        battlefield
+                    </li>
+                </ul>
+                <p class="paragraph">
+                    When launching the game, the player accesses an intuitive
+                    menu to set up the match (the menu without any clean desgin
+                    for the moment): choose the mode (local or online), number
+                    of players and AIs, select characters and the map. In-game,
+                    each player controls one active character but can switch at
+                    any time with one of their two backups. Battles are paced by
+                    the use of abilities with cooldowns, the application of
+                    statuses, and strategic team management. The last player
+                    with at least one character alive wins the match.
+                </p>
+            </section>
         </section>
 
         <!-- Sessions section -->
         <section id="sessions">
             <h1>Session and Room System</h1>
             <p class="subtitles">How sessions works</p>
-            
-            <p class="paragraph" style="color: var(--light);">
-                To allow multiple matches to run simultaneously, the game uses a room-based session system. Instead of placing all players in a single game instance, the server creates independent sessions where groups of players can play separately. <br>
-                
-                <br>
 
-                Players can create a new session by choosing a session name and configuring parameters such as the number of bots. Once created, the session becomes visible to other players in the session browser, which displays all currently available sessions along with basic information such as the session name and the number of connected players. <br>
-                
-                <br>
+            <p class="paragraph" style="color: var(--light)">
+                To allow multiple matches to run simultaneously, the game uses a
+                room-based session system. Instead of placing all players in a
+                single game instance, the server creates independent sessions
+                where groups of players can play separately. <br />
 
-                From this menu, players can easily join an existing session by selecting it from the list. When a player joins a session, they are assigned a position in the room and can proceed to the character selection menu to prepare for the match. <br>
-                
-                <br>
+                <br />
 
-                Each session is managed independently by the server. This ensures that multiple groups of players can create, join, and play matches at the same time without affecting other sessions running on the server. <br>
+                Players can create a new session by choosing a session name and
+                configuring parameters such as the number of bots. Once created,
+                the session becomes visible to other players in the session
+                browser, which displays all currently available sessions along
+                with basic information such as the session name and the number
+                of connected players. <br />
 
-                <br>
-                
-                <img src="assets/sessions.png" alt="Interface" width="100%">
-            </p> <br><br>
+                <br />
+
+                From this menu, players can easily join an existing session by
+                selecting it from the list. When a player joins a session, they
+                are assigned a position in the room and can proceed to the
+                character selection menu to prepare for the match. <br />
+
+                <br />
+
+                Each session is managed independently by the server. This
+                ensures that multiple groups of players can create, join, and
+                play matches at the same time without affecting other sessions
+                running on the server. <br />
+
+                <br />
+
+                <img src="assets/sessions.png" alt="Interface" width="100%" />
+            </p>
+            <br /><br />
         </section>
-        
+
         <!-- Demonstrations section -->
         <section id="demonstrations">
             <h1>Demonstrations</h1>
-            <p class="subtitles">Demonstrations of the code already done (respectively for the menu and for the displacement of the character)</p>
+            <p class="subtitles">
+                Demonstrations of the code already done (respectively for the
+                menu and for the displacement of the character)
+            </p>
             <section class="subsection">
-                <video src="assets/video_menu.mp4" width="100%" controls>
-                </video>
-                <video src="assets/video_deplacement.mp4" width="100%" controls>
-                </video>
+                <video
+                    src="assets/video_menu.mp4"
+                    width="100%"
+                    controls
+                ></video>
+                <video
+                    src="assets/video_deplacement.mp4"
+                    width="100%"
+                    controls
+                ></video>
             </section>
         </section>
 
@@ -198,36 +293,92 @@
                 <ul class="external-ressources">
                     <li>Documentations & libraries :</li>
                     <ul class="sub-list">
-                        <li><strong>Python documentation</strong> : <a href="https://docs.python.org/3/">https://docs.python.org/3/</a></li>
+                        <li>
+                            <strong>Python documentation</strong> :
+                            <a href="https://docs.python.org/3/"
+                                >https://docs.python.org/3/</a
+                            >
+                        </li>
                         <ul class="sub-list">
-                            <li><strong>Socket (server)</strong> : <a href="https://docs.python.org/3/library/socket.html">https://docs.python.org/3/library/socket.html</a></li>
-                            <li><strong>Pygame documentation</strong> : <a href="https://www.pygame.org/docs/">https://www.pygame.org/docs/</a></li>
-                            <li><strong>Colorama documentation</strong> : <a href="https://pypi.org/project/colorama/">https://pypi.org/project/colorama/</a></li>
+                            <li>
+                                <strong>Socket (server)</strong> :
+                                <a
+                                    href="https://docs.python.org/3/library/socket.html"
+                                    >https://docs.python.org/3/library/socket.html</a
+                                >
+                            </li>
+                            <li>
+                                <strong>Pygame documentation</strong> :
+                                <a href="https://www.pygame.org/docs/"
+                                    >https://www.pygame.org/docs/</a
+                                >
+                            </li>
+                            <li>
+                                <strong>Colorama documentation</strong> :
+                                <a href="https://pypi.org/project/colorama/"
+                                    >https://pypi.org/project/colorama/</a
+                                >
+                            </li>
                         </ul>
-                        
                     </ul>
                     <li>Soundbank</li>
                     <ul class="sub-list">
-                            <li><strong>bandlab ( app - music)</strong> : <a href="https://www.bandlab.com/?lang=en">https://www.bandlab.com/?lang=en</a></li>
-                            <li><strong>FamiTracker (app - sound effects)</strong> : <a href="http://famitracker.com/">http://famitracker.com/</a></li>
-                            <li>Inspirations</li>
-                            <ul class="sub-list">
-                                <li><strong>Nuclear Throne OST - Big Dog Theme Extended</strong> : <a href="https://youtu.be/fiTcl9jtL9I?si=Ae4znLYZRaUiKFQ1">https://youtu.be/fiTcl9jtL9I?si=Ae4znLYZRaUiKFQ1</a></li>
-                                <li><strong>Nuclear Throne OST - Lil Hunter Theme Extended</strong> : <a href="https://youtu.be/Pee_lsuVt3M?si=M6IbcgXUTgnFuMeK">https://youtu.be/Pee_lsuVt3M?si=M6IbcgXUTgnFuMeK</a></li>
-                            </ul>
-                    
+                        <li>
+                            <strong>bandlab ( app - music)</strong> :
+                            <a href="https://www.bandlab.com/?lang=en"
+                                >https://www.bandlab.com/?lang=en</a
+                            >
+                        </li>
+                        <li>
+                            <strong>FamiTracker (app - sound effects)</strong> :
+                            <a href="http://famitracker.com/"
+                                >http://famitracker.com/</a
+                            >
+                        </li>
+                        <li>Inspirations</li>
+                        <ul class="sub-list">
+                            <li>
+                                <strong
+                                    >Nuclear Throne OST - Big Dog Theme
+                                    Extended</strong
+                                >
+                                :
+                                <a
+                                    href="https://youtu.be/fiTcl9jtL9I?si=Ae4znLYZRaUiKFQ1"
+                                    >https://youtu.be/fiTcl9jtL9I?si=Ae4znLYZRaUiKFQ1</a
+                                >
+                            </li>
+                            <li>
+                                <strong
+                                    >Nuclear Throne OST - Lil Hunter Theme
+                                    Extended</strong
+                                >
+                                :
+                                <a
+                                    href="https://youtu.be/Pee_lsuVt3M?si=M6IbcgXUTgnFuMeK"
+                                    >https://youtu.be/Pee_lsuVt3M?si=M6IbcgXUTgnFuMeK</a
+                                >
+                            </li>
                         </ul>
+                    </ul>
                     <li>Design animation</li>
                     <ul class="sub-list">
-                        <li><strong>aseprite (app -  design animation)</strong> : <a href="https://www.aseprite.org/">https://www.aseprite.org/</a></li>
+                        <li>
+                            <strong>aseprite (app - design animation)</strong> :
+                            <a href="https://www.aseprite.org/"
+                                >https://www.aseprite.org/</a
+                            >
+                        </li>
                     </ul>
                 </ul>
             </section>
         </section>
 
         <footer>
-            <p>BLITZKRIEG Studio • Projet Jeu3D – EPITA 2030 • September 2025 - May 2026</p>
-            
+            <p>
+                BLITZKRIEG Studio • Projet Jeu3D – EPITA 2030 • September 2025 -
+                May 2026
+            </p>
         </footer>
     </body>
 </html>
