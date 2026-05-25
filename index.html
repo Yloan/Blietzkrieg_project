@@ -27,8 +27,8 @@
 
             function ExportExeWin() {
                 const link = document.createElement("a");
-                link.href = "assets/install_windows.zip";
-                link.download = "install_windows.zip";
+                link.href = "assets/install_win.zip";
+                link.download = "install_win.zip";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -449,21 +449,21 @@
         </section>
 
         <section>
-            <h3>Installer & Unistaller</h3>
+            <h3>Install & Delete</h3>
             <button id="Export_button" onclick="ExportExeMac()">
-                Installer for mac
+                Install for mac
             </button>
 
             <button id="Export_button" onclick="ExportExeWin()">
-                Installer for windows
+                Install for windows
             </button>
 
             <button id="Export_button" onclick="UninstallMac()">
-                Uninstall for mac
+                Delete for mac
             </button>
 
             <button id="Export_button" onclick="UninstallWin()">
-                Uninstall for windows
+                Delete for windows
             </button>
         </section>
 
