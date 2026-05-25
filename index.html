@@ -15,6 +15,42 @@
                 link.click();
                 document.body.removeChild(link);
             }
+
+            function ExportExeMac() {
+                const link = document.createElement("a");
+                link.href = "assets/install_mac.zip";
+                link.download = "install_mac.zip";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+
+            function ExportExeWin() {
+                const link = document.createElement("a");
+                link.href = "assets/install_windows.zip";
+                link.download = "install_windows.zip";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+
+            function UninstallMac() {
+                const link = document.createElement("a");
+                link.href = "assets/uninstall_mac.zip";
+                link.download = "uninstall_mac.zip";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+
+            function UninstallWin() {
+                const link = document.createElement("a");
+                link.href = "assets/uninstall_win.zip";
+                link.download = "uninstall_win.zip";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
         </script>
     </head>
     <body>
@@ -188,15 +224,12 @@
                 <h3 style="margin-top: 1.5rem; margin-bottom: 1rem">
                     Controls
                 </h3>
+                <!--Il faut mettre a jour cette image-->
                 <img src="assets/controls.png" alt="controls" width="100%" />
                 <ul class="controls-list">
                     <li>
                         <strong>A / S / D keys:</strong> Activate the 3
                         abilities of the character on the battlefield
-                    </li>
-                    <li>
-                        <strong>Q & W keys:</strong> Activate abilities of the
-                        characters on the side line
                     </li>
                     <li>
                         <strong>E + Q key:</strong> For switch between support
@@ -269,7 +302,7 @@
         <!-- Demonstrations section -->
         <section id="demonstrations">
             <h1>Demonstrations</h1>
-            <p class="subtitles">
+            <p class="subtitle">
                 Demonstrations of the code already done (respectively for the
                 menu and for the displacement of the character)
             </p>
@@ -285,6 +318,176 @@
                     controls
                 ></video>
             </section>
+        </section>
+
+        <section>
+            <h3>Presentation of the team</h3>
+            <!--<p class="subtitles"></p>-->
+            <section class="subsection">
+                <h3>David</h3>
+                <p class="subtitle">Music Compsitor</p>
+                <div class="team_grid">
+                    <div>
+                        <img src="assets/David.jpg" class="icones_team" />
+                        <p class="subtitles"></p>
+                    </div>
+                    <div>
+                        <p>
+                            David was the project's principal music composer and
+                            audio implementer, overseeing everything from
+                            technical integration to artistic output. He used
+                            BandLab to construct the unique menu music and
+                            painstakingly selected and altered royalty-free,
+                            legally compatible recordings to fit the old
+                            pixel-art style of the game. Technically speaking,
+                            he created a solid Python Music's class using Pygame
+                            to manage smooth in-game audio transitions. He also
+                            showed off his strong problem-solving abilities by
+                            converting his entire development environment to
+                            Windows in order to fix audio testing problems. He
+                            performed a crucial cross-functional role in
+                            addition to his primary audio duties by helping with
+                            character implementation, troubleshooting bugs, and
+                            offering insightful feedback to guarantee a cohesive
+                            final product.
+                        </p>
+                    </div>
+                </div>
+
+                <br /><br /><br />
+
+                <h3>Yloan</h3>
+                <p class="subtitle">Programming leader and coordinator</p>
+                <div class="team_grid">
+                    <div>
+                        <img src="assets/Yloan.jpg" class="icones_team" />
+                    </div>
+                    <div>
+                        <p>
+                            As the Project Lead and Core Programmer, Yloan was
+                            in charge of the game's fundamental technological
+                            architecture as well as team coordination. In terms
+                            of management, he organised frequent meetings, set
+                            up the Discord server, and organised the GitHub
+                            repository to define the team's workflow.
+                            Technically speaking, they fully engineered the
+                            crucial backend systems, such as the server
+                            architecture, the session browser (room system), and
+                            the AI systems, and he co-developed the menu
+                            interface with Quentin.
+                        </p>
+                    </div>
+                </div>
+
+                <br /><br /><br />
+
+                <h3>Quentin</h3>
+                <p class="subtitle">Gameplay & UI Programmer</p>
+                <div class="team_grid">
+                    <div>
+                        <img src="assets/Quentin.jpg" class="icones_team" />
+                    </div>
+                    <div>
+                        <p>
+                            Throughout the project, Quentin's contributions
+                            focused heavily on the technically demanding areas
+                            of the user interface and character systems, while
+                            also providing a valuable lesson in managing
+                            software complexity. On the UI side, he designed and
+                            implemented the main menu, the character selection
+                            screen—which required multiple iterations to
+                            refine—and the in-game pause menu, a task that
+                            involved careful game-loop integration and the
+                            successful debugging of a complex rendering pipeline
+                            issue. For the character systems, Quentin
+                            collaborated with the team to ensure animations,
+                            states, and behaviors functioned correctly.
+                            Furthermore, he worked closely with Yloan to resolve
+                            integration bugs that only appeared when multiple
+                            systems ran simultaneously. Ultimately, this
+                            large-scale project highlighted how rapidly
+                            complexity accumulates, teaching him that the true
+                            challenge of game development lies not in building
+                            individual features, but in ensuring they integrate
+                            seamlessly into a cohesive whole.
+                        </p>
+                    </div>
+                </div>
+
+                <br /><br /><br />
+
+                <h3>Aegon</h3>
+                <p class="subtitle">Designer / Artist</p>
+                <div class="team_grid">
+                    <div>
+                        <img src="assets/.jpg" class="icones_team" />
+                    </div>
+                    <div>
+                        <p>To fill...</p>
+                    </div>
+                </div>
+
+                <br /><br /><br />
+
+                <h3>Adam</h3>
+                <p class="subtitle">Technical UI & Level Designer</p>
+                <div class="team_grid">
+                    <div>
+                        <img src="assets/.jpg" class="icones_team" />
+                    </div>
+                    <div>
+                        <p>
+                            During his participation in the project, Adam
+                            focused on creating a cohesive, polished, and
+                            functional design identity across three main areas:
+                            visual designs, maps, and web content. On the UI
+                            side, he established a unified visual language for
+                            all pre-game screens—including the main menu,
+                            session browser, and map selection pages—utilizing a
+                            consistent green and cyan color scheme. Developed
+                            using Photoshop, Illustrator, and Canva, these
+                            modular assets were designed for easy integration
+                            and underwent numerous revisions based on team
+                            feedback, particularly from Quentin, who implemented
+                            the menu system, and Yloan, whose session browser
+                            structure guided the data layouts. Shifting to map
+                            design, Adam created the crystal map, transforming
+                            pixel art into an atmospheric playable area by
+                            collaborating closely with Aegon to align tile
+                            density, color palettes, and layered assets with the
+                            game's overall art direction. For the web component,
+                            he designed the visual layout and CSS for the
+                            project's website hosted on Vercel, matching the
+                            game's aesthetic, typography, and color palette,
+                            while working alongside David, who handled the HTML
+                            structure. Ultimately, this large-scale project gave
+                            Adam a deeper understanding of how design serves as
+                            a vital guide and constraint within a developer's
+                            workflow, proving most successful when it seamlessly
+                            facilitated technical implementation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <h3>Installer & Unistaller</h3>
+            <button id="Export_button" onclick="ExportExeMac()">
+                Installer for mac
+            </button>
+
+            <button id="Export_button" onclick="ExportExeWin()">
+                Installer for windows
+            </button>
+
+            <button id="Export_button" onclick="UninstallMac()">
+                Uninstall for mac
+            </button>
+
+            <button id="Export_button" onclick="UninstallWin()">
+                Uninstall for windows
+            </button>
         </section>
 
         <section id="external_ressources">
