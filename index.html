@@ -9,8 +9,8 @@
         <script>
             function ExportReport() {
                 const link = document.createElement("a");
-                link.href = "assets/BLITZKRIEG_2_second_defense.pdf";
-                link.download = "BLITZKRIEG_Thesis_Report_2.pdf";
+                link.href = "assets/BLITZKRIEG.pdf";
+                link.download = "BLITZKRIEG.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -62,7 +62,7 @@
                     <a href="#game-description">Game description</a>
                     <a href="#core-elements">Core elements</a>
                     <a href="#gameplay">Gameplay</a>
-                    <a href="#demonstrations">Demonstrations</a>
+                    <a href="#Download">Download</a>
                     <a href="#external_ressources">External Ressources</a>
                     <button id="Export_button" onclick="ExportReport()">
                         Export Thesis Report
@@ -84,8 +84,8 @@
                     In the game, up to four people can play against each other
                     using a vast array of characters. <br />
 
-                    Before a game begins, each player chooses three of the 18
-                    playable robots before duking it out on one of the 6
+                    Before a game begins, each player chooses three of the 5
+                    playable robots before duking it out on one of the 3
                     available maps. <br />
                     The last one standing is declared the winner. <br />
 
@@ -101,7 +101,7 @@
             <p class="subtitles">The pillars of gameplay</p>
             <h3 id="SS">Status & synergy</h3>
             <section class="subsection">
-                <img src="assets/Status.png" alt="Status" width="100%" />
+                <img src="assets/status_bis.png" alt="Status" width="100%" />
                 <p class="paragraph">
                     Statuses are temporary effects applied to characters (burn,
                     oil, freeze, etc.) that change their behavior or abilities.
@@ -141,7 +141,11 @@
             <section class="subsection">
                 <p class="paragraph">
                     <!-- L'image doit etre update aussi-->
-                    <img src="assets/.png" alt="Characters" width="100%" />
+                    <img
+                        src="assets/Characters_bis.png"
+                        alt="Characters"
+                        width="100%"
+                    />
                     The game offers 5 playable characters, each with unique
                     styles, abilities, and strategies. Some are specialized in
                     direct attacks, others in support or area control. This
@@ -190,11 +194,7 @@
             <br /><br />
             <h3>Interface</h3>
             <section class="subsection">
-                <img
-                    src="assets/Menu_interface.png"
-                    alt="Interface"
-                    width="100%"
-                />
+                <img src="assets/Interface.png" alt="Interface" width="100%" />
                 <p class="paragraph">
                     At the end the interface of the menu should look like this.
                     <br />
@@ -223,7 +223,11 @@
                 </h3>
                 <!--Il faut mettre a jour cette image-->
                 <!--Pour le moment on l'enlveve-->
-                <img src="assets/.png" alt="controls" width="100%" />
+                <img
+                    src="assets/Controls_bis.png"
+                    alt="controls"
+                    width="100%"
+                />
                 <ul class="controls-list">
                     <li>
                         <strong>A / S / D keys:</strong> Activate the 3
@@ -394,13 +398,33 @@
                 <br /><br /><br />
 
                 <h3>Aegon</h3>
-                <p class="subtitle">Designer / Artist</p>
+                <p class="subtitle">Lead Designer and Art Director</p>
                 <div class="team_grid">
                     <div>
                         <img src="assets/.jpg" class="icones_team" />
                     </div>
                     <div>
-                        <p>To fill...</p>
+                        <p>
+                            As Lead Designer and Art Director, Aegon was the
+                            creative driving force behind Blitzkrieg, conceiving
+                            the original idea inspired by a childhood mechanical
+                            creature drawing competition and establishing the
+                            game's core mechanical identity through an
+                            innovative, synergistic status effect system. He
+                            personally produced the vast majority of the game's
+                            visual and audio assets from scratch, including all
+                            five fully animated playable characters, the Forest
+                            and Desert maps, the main menus, the HUD, and all
+                            individual skill and status visual and sound
+                            effects. Although a personal health condition later
+                            forced the team to collectively scale down the
+                            project's original, highly ambitious scope from
+                            eighteen characters to five, this necessary
+                            adjustment did not diminish the high quality,
+                            distinctiveness, or commitment of the substantial
+                            body of work Aegon ultimately delivered throughout
+                            the year.
+                        </p>
                     </div>
                 </div>
 
@@ -448,7 +472,7 @@
             </section>
         </section>
 
-        <section>
+        <section id="Download">
             <h3>Install & Delete</h3>
             <button id="Export_button" onclick="ExportExeMac()">
                 Install for mac
